@@ -1,8 +1,30 @@
+
+* {
+  margin: 0;/*Define as margens para zero. As margens padrão aplicadas pelo navegador podem variar, e definir isso para zero no início do seu estilo pode ajudar a garantir consistência na aparência do layout.*/
+  padding: 0;/*Define o preenchimento para zero. Assim como as margens, os navegadores podem aplicar preenchimentos padrão a elementos HTML, e essa regra ajuda a zerar esses valores para iniciar com uma base limpa.*/
+  box-sizing: border-box;/*Essa propriedade influencia o modelo de caixa do elemento. border-box inclui tanto o preenchimento quanto a borda dentro das dimensões do elemento, evitando que eles aumentem o tamanho total do elemento. Isso facilita o cálculo e o controle das dimensões dos elementos.*/
+  /*obs. por padrão do css o "box-sizing" vem padão como content-box, isso faz com que o o tamanho do elemento seja um resultado da soma do width + padding e border, desproporcionando um tamanho real do elemento.*/
+}
+
+
 body {
  
-    margin: 0;
+    flex-wrap: wrap; /* Essa propriedade determina se os itens dentro do contêiner devem ser colocados em uma única linha ou se podem ser quebrados em várias linhas para ajustar ao espaço disponível.*/
     
-    font-family: "DM Sans", sans-serif;
+    flex: 1 1 100vw;/*Esta é uma forma abreviada para definir três propriedades relacionadas ao flex: flex-grow, flex-shrink e flex-basis. Neste caso:
+    flex-grow: 1;: Os itens têm permissão para crescer para preencher o contêiner.
+    flex-shrink: 1;: Os itens têm permissão para encolher para se ajustar ao contêiner.
+    flex-basis: 100vw;: Estabelece o tamanho inicial dos itens como 100% da largura da viewport.*/
+   
+    margin-top: 0px;/*Define a margem superior do contêiner como zero pixels.*/
+    
+    min-height: 100vh;/*Estabelece a altura mínima do contêiner como 100% da altura da viewport, garantindo que o contêiner tenha pelo menos essa altura.*/
+    
+    justify-content: center;/* Centraliza os itens horizontalmente dentro do contêiner.*/
+    
+    align-items: center;/* Centraliza os itens verticalmente dentro do contêiner.*/
+    
+    font-family: "DM Sans", sans-serif;/*: Define a família de fontes a ser usada para o texto dentro do contêiner. */
   }
   
   /* Links navegação */
@@ -29,14 +51,14 @@ body {
   /*inicio*/
   
   section#inicio {
-    padding-bottom: 15rem; /* era 200 px alterei para 12.5 rem, verificar a questão da flexibilidade */
-      padding-top: 10rem; /* era 100 px alterei para 6.25 rem, verificar a questão da flexibilidade */
-      background: #000000; 
-      margin: 0;
+    display: flex;
+    background: #000000; 
+    margin: 0;
   
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
 
   div#start h1, h3, p{
