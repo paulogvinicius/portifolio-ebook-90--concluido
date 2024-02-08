@@ -7,25 +7,10 @@
 }
 
 
-body {
- 
-    flex-wrap: wrap; /* Essa propriedade determina se os itens dentro do contêiner devem ser colocados em uma única linha ou se podem ser quebrados em várias linhas para ajustar ao espaço disponível.*/
-    
-    flex: 1 1 100vw;/*Esta é uma forma abreviada para definir três propriedades relacionadas ao flex: flex-grow, flex-shrink e flex-basis. Neste caso:
-    flex-grow: 1;: Os itens têm permissão para crescer para preencher o contêiner.
-    flex-shrink: 1;: Os itens têm permissão para encolher para se ajustar ao contêiner.
-    flex-basis: 100vw;: Estabelece o tamanho inicial dos itens como 100% da largura da viewport.*/
-   
-    margin-top: 0px;/*Define a margem superior do contêiner como zero pixels.*/
-    
-    min-height: 100vh;/*Estabelece a altura mínima do contêiner como 100% da altura da viewport, garantindo que o contêiner tenha pelo menos essa altura.*/
-    
-    justify-content: center;/* Centraliza os itens horizontalmente dentro do contêiner.*/
-    
-    align-items: center;/* Centraliza os itens verticalmente dentro do contêiner.*/
-    
-    font-family: "DM Sans", sans-serif;/*: Define a família de fontes a ser usada para o texto dentro do contêiner. */
-  }
+body {  
+  margin: 0;
+  font-family: "DM Sans", sans-serif;/*: Define a família de fontes a ser usada para o texto dentro do contêiner. */
+}
   
   /* Links navegação */
   
@@ -33,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     
-    gap: 1rem;
+    gap: 2rem;
     font-size: 1rem;
   }
   
@@ -54,10 +39,10 @@ body {
     display: flex;
     background: #000000; 
     margin: 0;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
     
   }
 
@@ -73,28 +58,27 @@ body {
       
     }
   
-    div#start H3{
-      font-size: 14px;
-      color: #00fd0d;
+  div#start H3{
+    font-size: 14px;
+    color: #00fd0d;
   
-    }
+  }
   
-    div#start p{
-      color: #afadad;
-      padding-bottom: 50px;
-    }
+  div#start p{
+    color: #afadad;
+    padding-bottom: 50px;
+  }
     
   
   div#start {
         margin: 10rem; /* era 150 px alterei para 9 rem, verificar a questão da flexibilidade */
-        
+        background-color: #fff;
         
   }
 
   div#start img{
     width: 24rem;
     height: 24rem;
-
     border-radius: 100%;
   }
   
@@ -104,11 +88,9 @@ body {
     text-transform: uppercase;
     font-family: 'Mulish', sans-serif;
     color: #fff;
-  
-    height: 56px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+
     display: flex;
     flex-shrink: 0;
     
@@ -126,27 +108,32 @@ body {
   
   section#sobre{
     background-color: #1d1c1d;
-  
-    padding-left: 20rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-right: 10rem;
-
-
-      max-width: 96rem;
-      margin: 0;
+    margin: 0;
+    display: flex;
+    height: 400px ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
       
   }
-  
+  section#sobre h2, p {
+    margin: 50px;
+    margin-left: 50px;
+    text-align: center;
+  }
   section#sobre h2 {
     color: #04fc04;
-      font-size: 4rem;
-      font-weight: 700;
+    font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: ;
   }
   
   section#sobre p {
+    
+    width: 500px; 
     color: #fff;
     font-size: 1.1rem;
+    line-height: 1.5;
   }
   
   
@@ -377,3 +364,5 @@ body {
     background-color: #000;
     padding: 10px 10px 100px 10px;
   }
+
+  @med
