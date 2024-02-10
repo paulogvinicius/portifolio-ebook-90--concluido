@@ -23,12 +23,14 @@ body {
   
   .links a{
     color: #04fc04; /* cor do texto*/
-    text-decoration: none; é usada para remover a decoração de texto padrão, como sublinhado, de um elemento HTML.
+    text-decoration: none; /*é usada para remover a decoração de texto padrão, como sublinhado, de um elemento HTML.*/
   }
   
   .link{
-    padding: 1rem 0.5rem;
-    background: #0a0a0a;
+    padding: 1rem 0.5rem;/* Define o preenchimento do elemento. A propriedade padding aceita até quatro valores, representando o preenchimento nos lados superior, direito, inferior e esquerdo, respectivamente. Neste caso:
+    1rem: Define um preenchimento de 1 unidade de medida rem no topo e na parte inferior do elemento. 
+    0.5rem: Define um preenchimento de 0.5 unidades de medida rem nos lados direito e esquerdo do elemento.*/
+    background: #0a0a0a; /*Define o fundo do elemento.*/
   }
   
   
