@@ -1,9 +1,16 @@
 
 * {
-  margin: 0;/*Define as margens para zero. As margens padrão aplicadas pelo navegador podem variar, e definir isso para zero no início do seu estilo pode ajudar a garantir consistência na aparência do layout.*/
-  padding: 0;/*Define o preenchimento para zero. Assim como as margens, os navegadores podem aplicar preenchimentos padrão a elementos HTML, e essa regra ajuda a zerar esses valores para iniciar com uma base limpa.*/
-  box-sizing: border-box;/*Essa propriedade influencia o modelo de caixa do elemento. border-box inclui tanto o preenchimento quanto a borda dentro das dimensões do elemento, evitando que eles aumentem o tamanho total do elemento. Isso facilita o cálculo e o controle das dimensões dos elementos.*/
-  /*obs. por padrão do css o "box-sizing" vem padão como content-box, isso faz com que o o tamanho do elemento seja um resultado da soma do width + padding e border, desproporcionando um tamanho real do elemento.*/
+  /* Define as margens para zero. As margens padrão aplicadas pelo navegador podem variar, e definir isso para zero no início do seu estilo pode ajudar a garantir consistência na aparência do layout. */
+margin: 0;
+
+/* Define o preenchimento para zero. Assim como as margens, os navegadores podem aplicar preenchimentos padrão a elementos HTML, e essa regra ajuda a zerar esses valores para iniciar com uma base limpa. */
+padding: 0;
+
+/* Essa propriedade influencia o modelo de caixa do elemento. border-box inclui tanto o preenchimento quanto a borda dentro das dimensões do elemento, evitando que eles aumentem o tamanho total do elemento. Isso facilita o cálculo e o controle das dimensões dos elementos. */
+box-sizing: border-box;
+
+/* Observação: por padrão do CSS, o "box-sizing" vem padronizado como content-box. Isso faz com que o tamanho do elemento seja um resultado da soma do width + padding e border, desproporcionando um tamanho real do elemento. */
+
 }
 
 
@@ -39,38 +46,71 @@ body {
   }
   
   .link{
-    padding: 1rem 0.5rem;
-     background: #0a0a0a; /*Define o fundo do elemento.*/
+/* Define o preenchimento do elemento. A propriedade padding aceita até quatro valores, representando o preenchimento nos lados superior, direito, inferior e esquerdo, respectivamente. 
+   Neste caso:
+   - 1rem: Define um preenchimento de 1 unidade de medida rem no topo e na parte inferior do elemento.
+   - 0.5rem: Define um preenchimento de 0.5 unidades de medida rem nos lados direito e esquerdo do elemento. */
+   padding: 1rem 0.5rem;
+
+   /* Define o fundo do elemento como uma tonalidade de cinza escuro (#0a0a0a). */
+   background: #0a0a0a;
+   
   }
   
   
   /*inicio*/
   
   section#inicio {
-    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*//*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
-    background: #000000; /*Define o fundo do elemento.*/
-    margin: 0;/* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página.*/
-    justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/ /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
-    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
-    flex-wrap: wrap;/* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. Neste caso, wrap permite que os itens sejam dispostos em várias linhas quando não couberem em uma única linha.*/
-    justify-content: space-around;/* Aplica o espaçamento igual entre os itens dentro do contêiner, distribuindo o espaço disponível de forma uniforme ao redor dos itens. Isso significa que há espaço igual entre os itens, bem como no início e no final do contêiner.*/
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+      /* Define o fundo do elemento como preto (#000000). */
+      background: #000000;
+
+      /* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página. */
+      margin: 0;
+
+      /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+      justify-content: center;
+
+      /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+      align-items: center;
+
+      /* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. 
+        Neste caso, wrap permite que os itens sejam dispostos em várias linhas quando não couberem em uma única linha. */
+      flex-wrap: wrap;
+
+      /* Aplica o espaçamento igual entre os itens dentro do contêiner, distribuindo o espaço disponível de forma uniforme ao redor dos itens. 
+        Isso significa que há espaço igual entre os itens, bem como no início e no final do contêiner. */
+      justify-content: space-around;
+
   }
 
   
   #start {
-    
-    margin-top: 200px;/*define a margem superior de um elemento como 200 pixels. Isso significa que haverá um espaço de 200 pixels entre a borda superior do elemento e o elemento acima dele (ou em relação ao contêiner pai, se aplicável).*/
-    width: 500px;/*A declaração width: 500px; em CSS define a largura de um elemento como 500 pixels. Isso significa que o elemento terá uma largura fixa de 500 pixels, independentemente do tamanho da tela ou do conteúdo dentro dele.*/
-    text-align: center;/* é usada para alinhar o texto dentro de um elemento ao centro horizontalmente. Isso significa que o texto dentro do elemento será centralizado ao longo do eixo horizontal do elemento pai.*/
-} 
+      /* Define a margem superior de um elemento como 200 pixels. Isso significa que haverá um espaço de 200 pixels entre a borda superior do elemento e o elemento acima dele (ou em relação ao contêiner pai, se aplicável). */
+      margin-top: 200px;
+
+      /* A declaração width: 500px; em CSS define a largura de um elemento como 500 pixels. Isso significa que o elemento terá uma largura fixa de 500 pixels, independentemente do tamanho da tela ou do conteúdo dentro dele. */
+      width: 500px;
+
+      /* A propriedade text-align: center; é usada para alinhar o texto dentro de um elemento ao centro horizontalmente. Isso significa que o texto dentro do elemento será centralizado ao longo do eixo horizontal do elemento pai. */
+      text-align: center;
+
+    } 
 
   
     div#start h1{
   
-      font-size: 40px;/*Define o tamanho da fonte do texto dentro do elemento como 40 pixels. Isso aumentará o tamanho do texto para 40 pixels.*/
-      color: #00fd0d; /*Define a cor do texto dentro do elemento como uma tonalidade de verde (especificada pelo código de cor hexadecimal #00fd0d). Isso fará com que o texto tenha uma cor verde brilhante.*/ 
-      font-weight: normal;/*Define o peso da fonte do texto como normal. Isso restaura o peso da fonte para o padrão, desfazendo quaisquer outras configurações de peso da fonte que possam ter sido aplicadas anteriormente.*/
-    }
+/* Define o tamanho da fonte do texto dentro do elemento como 40 pixels. Isso aumentará o tamanho do texto para 40 pixels. */
+font-size: 40px;
+
+/* Define a cor do texto dentro do elemento como uma tonalidade de verde (especificada pelo código de cor hexadecimal #00fd0d). Isso fará com que o texto tenha uma cor verde brilhante. */
+color: #00fd0d;
+
+/* Define o peso da fonte do texto como normal. Isso restaura o peso da fonte para o padrão, desfazendo quaisquer outras configurações de peso da fonte que possam ter sido aplicadas anteriormente. */
+font-weight: normal;
+}
   
   div#start H3{
     font-size: 14px;/*Define o tamanho da fonte como 14 pixels. Isso especifica o tamanho do texto em relação à altura dos caracteres. Neste caso, o texto terá 14 pixels de altura.*/
