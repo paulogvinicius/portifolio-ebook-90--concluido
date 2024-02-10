@@ -37,10 +37,10 @@ body {
   /*inicio*/
   
   section#inicio {
-    display: flex;
-    background: #000000; 
-    margin: 0;
-    justify-content:center;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+    background: #000000; /*Define o fundo do elemento.*/
+    margin: 0;/* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página.*/
+    justify-content:center; 
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
