@@ -8,23 +8,22 @@
 
 
 body {  
-  margin: 0;
+  margin: 0; /* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página.*/
   font-family: "DM Sans", sans-serif;/*: Define a família de fontes a ser usada para o texto dentro do contêiner. */
 }
   
   /* Links navegação */
   
   .links{
-    display: flex;
-    justify-content: center;
-    
-    gap: 2rem;
-    font-size: 1rem;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+    justify-content: center; /*Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+    gap: 2rem;/*Define o espaço entre os itens dentro do contêiner. Neste caso, o valor de 2rem especifica um espaçamento de 2 vezes o tamanho da unidade de medida rem. O gap é uma propriedade CSS que define o espaçamento entre os itens em um layout flexível.*/
+    font-size: 1rem;/* Define o tamanho da fonte dentro do contêiner. Neste caso, 1rem corresponde ao tamanho de fonte padrão do elemento html (geralmente 16 pixels no navegador), proporcionando uma fonte de tamanho normal para o conteúdo dentro do contêiner.*/
   }
   
   .links a{
-    color: #04fc04;
-    text-decoration: none;
+    color: #04fc04; /* cor do texto*/
+    text-decoration: none; é usada para remover a decoração de texto padrão, como sublinhado, de um elemento HTML.
   }
   
   .link{
