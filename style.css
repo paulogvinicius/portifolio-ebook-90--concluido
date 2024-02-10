@@ -393,5 +393,76 @@ body {
         div#start h1, h3 {
             font-size: 30px;
       }
+      section#sobre h2 {
+        color: #04fc04;
+        font-size: 3rem;
+        font-weight: 700;
+    
+      }
+      
+      section#sobre p {
+        
+        width: 300px; 
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .card {
+        margin: 0;
+        margin-top: 100px;
+        background: rgb(51, 51, 51);;
+        border: 2px solid #323238;
+        width: 350px;
+        height: 450px;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      ul#tecnologias li.tecnologia{
+    
+  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+      
+        box-shadow: 0px 36px 28px -24px rgba(0, 0, 0, 0.2);
+      }
+      section#contatos {
+      
+        padding-bottom: 5rem; /* era 200 px alterei para 12.5 rem, verificar a questão da flexibilidade */
+        padding-top: 6.25rem; /* era 100 px alterei para 6.25 rem, verificar a questão da flexibilidade */
+        background: #000000;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+      
+      }
+      
+      section#contatos h1{
+        font-size: 2.5rem; /* era 40 px alterei para 2.5 rem, verificar a questão da flexibilidade */
+        line-height: 3.5rem; /* era 56 px alterei para 3.5 rem, verificar a questão da flexibilidade */
+        color: #04fc04;
+        font-weight: normal;
+        text-align: center;
+      }
+      
+      section#contatos h4{
+        color: #fff;
+        margin: 20px;
+      }
+      
+      
+      
 }
   
