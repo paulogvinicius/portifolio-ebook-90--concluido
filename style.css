@@ -16,7 +16,7 @@ body {
   
   .links{
     display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*//*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
-        justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/ /*Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/ /*Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
     gap: 2rem;/*Define o espaço entre os itens dentro do contêiner. Neste caso, o valor de 2rem especifica um espaçamento de 2 vezes o tamanho da unidade de medida rem. O gap é uma propriedade CSS que define o espaçamento entre os itens em um layout flexível.*/
     font-size: 1rem;/* Define o tamanho da fonte dentro do contêiner. Neste caso, 1rem corresponde ao tamanho de fonte padrão do elemento html (geralmente 16 pixels no navegador), proporcionando uma fonte de tamanho normal para o conteúdo dentro do contêiner.*/
   }
@@ -44,52 +44,42 @@ body {
     align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
     flex-wrap: wrap;/* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. Neste caso, wrap permite que os itens sejam dispostos em várias linhas quando não couberem em uma única linha.*/
     justify-content: space-around;/* Aplica o espaçamento igual entre os itens dentro do contêiner, distribuindo o espaço disponível de forma uniforme ao redor dos itens. Isso significa que há espaço igual entre os itens, bem como no início e no final do contêiner.*/
-    
-
-    
   }
 
   
   #start {
     
-    margin-top: 200px;
-
-    width: 500px;
-    text-align: center;
-
+    margin-top: 200px;/*define a margem superior de um elemento como 200 pixels. Isso significa que haverá um espaço de 200 pixels entre a borda superior do elemento e o elemento acima dele (ou em relação ao contêiner pai, se aplicável).*/
+    width: 500px;/*A declaração width: 500px; em CSS define a largura de um elemento como 500 pixels. Isso significa que o elemento terá uma largura fixa de 500 pixels, independentemente do tamanho da tela ou do conteúdo dentro dele.*/
+    text-align: center;/* é usada para alinhar o texto dentro de um elemento ao centro horizontalmente. Isso significa que o texto dentro do elemento será centralizado ao longo do eixo horizontal do elemento pai.*/
 } 
-  div#start h1, h3, p{
 
-  }
   
     div#start h1{
   
-      font-size: 40px;
-      color: #00fd0d;
-      font-weight: normal;
-      
+      font-size: 40px;/*Define o tamanho da fonte do texto dentro do elemento como 40 pixels. Isso aumentará o tamanho do texto para 40 pixels.*/
+      color: #00fd0d; /*Define a cor do texto dentro do elemento como uma tonalidade de verde (especificada pelo código de cor hexadecimal #00fd0d). Isso fará com que o texto tenha uma cor verde brilhante.*/ 
+      font-weight: normal;/*Define o peso da fonte do texto como normal. Isso restaura o peso da fonte para o padrão, desfazendo quaisquer outras configurações de peso da fonte que possam ter sido aplicadas anteriormente.*/
     }
   
   div#start H3{
-    font-size: 14px;
-    color: #00fd0d;
+    font-size: 14px;/*Define o tamanho da fonte como 14 pixels. Isso especifica o tamanho do texto em relação à altura dos caracteres. Neste caso, o texto terá 14 pixels de altura.*/
+    color: #00fd0d; /*Define a cor do texto dentro do elemento como uma tonalidade de verde (especificada pelo código de cor hexadecimal #00fd0d). Isso fará com que o texto tenha uma cor verde brilhante.*/
     
   
   }
   
   div#start p{
-    color: #afadad;
-    padding-bottom: 50px;
+    color: #afadad; /*Define a cor do texto como um tom de cinza específico, representado pelo código de cor hexadecimal #afadad. Isso fará com que o texto dentro do elemento tenha uma cor de cinza mais escura.*/
+    padding-bottom: 50px; /*Define o preenchimento na parte inferior do elemento como 50 pixels. Isso significa que haverá um espaço interno de 50 pixels entre o conteúdo dentro do elemento e a borda inferior do elemento.*/
   }
     
   
 
   div#start img{
-
-
-    width: 24rem;
-    height: 24rem;
-    border-radius: 100%;
+    width: 24rem;/*Define a largura do elemento como 24 unidades de medida rem. Isso especifica a largura do elemento em relação à largura do caractere "M" da fonte padrão definida no documento. No caso de 24rem, o elemento terá uma largura de 24 vezes a largura do caractere "M".*/
+    height: 24rem;/*Define a altura do elemento como 24 unidades de medida rem. Isso especifica a altura do elemento em relação à altura do caractere "M" da fonte padrão definida no documento. No caso de 24rem, o elemento terá uma altura de 24 vezes a altura do caractere "M".*/
+    border-radius: 100%;/*Define um raio de borda de 100% para o elemento, o que faz com que as bordas do elemento sejam arredondadas para criar um círculo. A porcentagem especificada se refere à largura do próprio elemento, fazendo com que as bordas sejam arredondadas para corresponder ao tamanho do elemento. Isso transforma o elemento em um círculo.*/
 
   }
   
@@ -99,7 +89,7 @@ body {
     text-transform: uppercase;
     font-family: 'Mulish', sans-serif;
     color: #fff;
-        justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+    justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
     align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
     flex-shrink: 0;
     padding: 14px 32px 15px 32px;
@@ -119,7 +109,7 @@ body {
     margin: 0;
     display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
     height: 400px ;
-        justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
     align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
     flex-wrap: wrap;
       
@@ -127,7 +117,7 @@ body {
   section#sobre h2, p {
     margin: 50px;
     margin-left: 50px;
-    text-align: center;
+    text-align: center;/* é usada para alinhar o texto dentro de um elemento ao centro horizontalmente. Isso significa que o texto dentro do elemento será centralizado ao longo do eixo horizontal do elemento pai.*/
   }
   section#sobre h2 {
     color: #04fc04;
@@ -158,7 +148,7 @@ body {
   section#Titulo-projetos h1{
     margin-top: 100px;
     font-size: 50px;
-    color: #00fd0d;
+    color: #00fd0d; /*Define a cor do texto dentro do elemento como uma tonalidade de verde (especificada pelo código de cor hexadecimal #00fd0d). Isso fará com que o texto tenha uma cor verde brilhante.*/
   }
 
   section#Titulo-projetos p{
@@ -170,7 +160,7 @@ body {
   section#projetos {
     
     display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
-    justify-content: space-around;
+    justify-content: space-around;/* Aplica o espaçamento igual entre os itens dentro do contêiner, distribuindo o espaço disponível de forma uniforme ao redor dos itens. Isso significa que há espaço igual entre os itens, bem como no início e no final do contêiner.*/
     flex-wrap: wrap;
   
     background: #000000;
@@ -245,7 +235,7 @@ body {
   section#habilidades div#conteudo-habilidades {
     margin: 0;
     display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
-    justify-content: space-around;
+    justify-content: space-around;/* Aplica o espaçamento igual entre os itens dentro do contêiner, distribuindo o espaço disponível de forma uniforme ao redor dos itens. Isso significa que há espaço igual entre os itens, bem como no início e no final do contêiner.*/
     align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
     flex-wrap: wrap;
 
@@ -325,7 +315,7 @@ body {
     line-height: 3.5rem; /* era 56 px alterei para 3.5 rem, verificar a questão da flexibilidade */
     color: #04fc04;
   
-    font-weight: normal;
+    font-weight: normal;/*Define o peso da fonte do texto como normal. Isso restaura o peso da fonte para o padrão, desfazendo quaisquer outras configurações de peso da fonte que possam ter sido aplicadas anteriormente.*/
     
   }
   
@@ -348,7 +338,7 @@ body {
   
   footer{
     align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
-        justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
     display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
 
     padding: 15rem;
@@ -367,100 +357,100 @@ body {
   
   footer img{
     width: 30px; 
-        height: 30px;
+height: 30px;
   
   }
   
   @media(max-width: 1200px){
     .itens-center{
-        flex-direction: column;
+flex-direction: column;
     }
     footer,
     section{
-        padding: 5rem;
+padding: 5rem;
     }
   
   }
   
   
   @media only screen and (max-width: 713px){
-        #start {
-        
-          margin-top: 50px;
-          width: 500px;
-          text-align: center;
+#start {
+
+  margin-top: 50px;
+  width: 500px;
+          
       
       } 
-        div#start h1, h3 {
-            font-size: 30px;
+div#start h1, h3 {
+    font-size: 30px;
       }
       section#sobre h2 {
-        color: #04fc04;
-        font-size: 3rem;
-        font-weight: 700;
+color: #04fc04;
+font-size: 3rem;
+font-weight: 700;
     
       }
       
       section#sobre p {
-        
-        width: 300px; 
-        color: #fff;
-        font-size: 1rem;
-        line-height: 1.5;
+
+width: 300px; 
+color: #fff;
+font-size: 1rem;
+line-height: 1.5;
       }
       .card {
-        margin: 0;
-        margin-top: 100px;
-        background: rgb(51, 51, 51);;
-        border: 2px solid #323238;
-        width: 350px;
-        height: 450px;
-        border-radius: 8px;
-        overflow: hidden;
+margin: 0;
+margin-top: 100px;
+background: rgb(51, 51, 51);;
+border: 2px solid #323238;
+width: 350px;
+height: 450px;
+border-radius: 8px;
+overflow: hidden;
       }
       ul#tecnologias li.tecnologia{
     
   
-        display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
-        flex-direction: column;
-        align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
-            justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
-        margin: 0;
+display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+flex-direction: column;
+align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
+    justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+margin: 0;
       
-        width: 120px;
-        height: 120px;
-        border-radius: 8px;
+width: 120px;
+height: 120px;
+border-radius: 8px;
       
-        box-shadow: 0px 36px 28px -24px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 36px 28px -24px rgba(0, 0, 0, 0.2);
       }
       section#contatos {
       
-        padding-bottom: 5rem; /* era 200 px alterei para 12.5 rem, verificar a questão da flexibilidade */
-        padding-top: 6.25rem; /* era 100 px alterei para 6.25 rem, verificar a questão da flexibilidade */
-        background: #000000;
-        padding-left: 50px;
-        padding-right: 50px;
-        
-        flex-wrap: wrap;
-        display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
-        align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
-            justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
-        
-        
+padding-bottom: 5rem; /* era 200 px alterei para 12.5 rem, verificar a questão da flexibilidade */
+padding-top: 6.25rem; /* era 100 px alterei para 6.25 rem, verificar a questão da flexibilidade */
+background: #000000;
+padding-left: 50px;
+padding-right: 50px;
+
+flex-wrap: wrap;
+display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
+    justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+
+
       
       }
       
       section#contatos h1{
-        font-size: 2.5rem; /* era 40 px alterei para 2.5 rem, verificar a questão da flexibilidade */
-        line-height: 3.5rem; /* era 56 px alterei para 3.5 rem, verificar a questão da flexibilidade */
-        color: #04fc04;
-        font-weight: normal;
-        text-align: center;
+font-size: 2.5rem; /* era 40 px alterei para 2.5 rem, verificar a questão da flexibilidade */
+line-height: 3.5rem; /* era 56 px alterei para 3.5 rem, verificar a questão da flexibilidade */
+color: #04fc04;
+font-weight: normal;/*Define o peso da fonte do texto como normal. Isso restaura o peso da fonte para o padrão, desfazendo quaisquer outras configurações de peso da fonte que possam ter sido aplicadas anteriormente.*/
+        
       }
       
       section#contatos h4{
-        color: #fff;
-        margin: 20px;
+color: #fff;
+margin: 20px;
       }
       
       
