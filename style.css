@@ -8,15 +8,15 @@
 
 
 body {  
-  margin: 0; /* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página.*/
+  margin: 0; /* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página.*//* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página.*/
   font-family: "DM Sans", sans-serif;/*: Define a família de fontes a ser usada para o texto dentro do contêiner. */
 }
   
   /* Links navegação */
   
   .links{
-    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
-    justify-content: center; /*Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*//*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+        justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/ /*Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
     gap: 2rem;/*Define o espaço entre os itens dentro do contêiner. Neste caso, o valor de 2rem especifica um espaçamento de 2 vezes o tamanho da unidade de medida rem. O gap é uma propriedade CSS que define o espaçamento entre os itens em um layout flexível.*/
     font-size: 1rem;/* Define o tamanho da fonte dentro do contêiner. Neste caso, 1rem corresponde ao tamanho de fonte padrão do elemento html (geralmente 16 pixels no navegador), proporcionando uma fonte de tamanho normal para o conteúdo dentro do contêiner.*/
   }
@@ -37,13 +37,13 @@ body {
   /*inicio*/
   
   section#inicio {
-    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*//*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
     background: #000000; /*Define o fundo do elemento.*/
     margin: 0;/* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página.*/
-    justify-content:center; 
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/ /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
+    flex-wrap: wrap;/* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. Neste caso, wrap permite que os itens sejam dispostos em várias linhas quando não couberem em uma única linha.*/
+    justify-content: space-around;/* Aplica o espaçamento igual entre os itens dentro do contêiner, distribuindo o espaço disponível de forma uniforme ao redor dos itens. Isso significa que há espaço igual entre os itens, bem como no início e no final do contêiner.*/
     
 
     
@@ -99,8 +99,8 @@ body {
     text-transform: uppercase;
     font-family: 'Mulish', sans-serif;
     color: #fff;
-    justify-content: center;
-    align-items: center;
+        justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
     flex-shrink: 0;
     padding: 14px 32px 15px 32px;
     border: none;
@@ -117,10 +117,10 @@ body {
   section#sobre{
     background-color: #1d1c1d;
     margin: 0;
-    display: flex;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
     height: 400px ;
-    justify-content: center;
-    align-items: center;
+        justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
     flex-wrap: wrap;
       
   }
@@ -149,9 +149,9 @@ body {
   
   section#Titulo-projetos{
     background: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
+    justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
     flex-wrap: wrap;
   }
   
@@ -169,7 +169,7 @@ body {
   
   section#projetos {
     
-    display: flex;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
     justify-content: space-around;
     flex-wrap: wrap;
   
@@ -208,9 +208,9 @@ body {
 
   section#vermais{
   
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
+    justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
 
     background-color: #000;
     padding: 10px 10px 100px 10px;
@@ -224,8 +224,8 @@ body {
   section#habilidades {
     background: #1f1f1f; 
     margin: 0;
-    display: flex;
-    align-items: center;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
     justify-content:space-around;
     flex-wrap: wrap;
     height: 500px;
@@ -236,7 +236,7 @@ body {
   section#habilidades img{
 
     margin: 50px;
-    display: flex;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
     width: auto;
     height: 80px;
     
@@ -244,9 +244,9 @@ body {
   
   section#habilidades div#conteudo-habilidades {
     margin: 0;
-    display: flex;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
     justify-content: space-around;
-    align-items: center;
+    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
     flex-wrap: wrap;
 
     
@@ -269,16 +269,16 @@ body {
     
     
     
-    display: flex;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
   }
   
   ul#tecnologias li.tecnologia{
     
   
-    display: flex;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
+    justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
    
   
     width: 159px;
@@ -312,9 +312,9 @@ body {
     padding-right: 50px;
     
     flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
+    justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
     
     
   
@@ -347,9 +347,9 @@ body {
   /* footer - Final */
   
   footer{
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
+        justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
+    display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
 
     padding: 15rem;
       
@@ -421,10 +421,10 @@ body {
       ul#tecnologias li.tecnologia{
     
   
-        display: flex;
+        display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
+            justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
         margin: 0;
       
         width: 120px;
@@ -442,9 +442,9 @@ body {
         padding-right: 50px;
         
         flex-wrap: wrap;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
+        align-items: center;/*Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox.*/
+            justify-content:center; /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox.*/
         
         
       
