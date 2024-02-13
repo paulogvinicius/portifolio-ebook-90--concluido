@@ -1,246 +1,600 @@
-body {
- 
-    margin: 0;
-    
-    font-family: "DM Sans", sans-serif;
-  }
+
+* {
+  /* Define as margens para zero. As margens padrão aplicadas pelo navegador podem variar, e definir isso para zero no início do seu estilo pode ajudar a garantir consistência na aparência do layout. */
+margin: 0;
+
+/* Define o preenchimento para zero. Assim como as margens, os navegadores podem aplicar preenchimentos padrão a elementos HTML, e essa regra ajuda a zerar esses valores para iniciar com uma base limpa. */
+padding: 0;
+
+/* Essa propriedade influencia o modelo de caixa do elemento. border-box inclui tanto o preenchimento quanto a borda dentro das dimensões do elemento, evitando que eles aumentem o tamanho total do elemento. Isso facilita o cálculo e o controle das dimensões dos elementos. */
+box-sizing: border-box;
+
+/* Observação: por padrão do CSS, o "box-sizing" vem padronizado como content-box. Isso faz com que o tamanho do elemento seja um resultado da soma do width + padding e border, desproporcionando um tamanho real do elemento. */
+
+}
+
+
+body {  
+  margin: 0; /* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página.*//* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página.*/
+  font-family: "DM Sans", sans-serif;/*: Define a família de fontes a ser usada para o texto dentro do contêiner. */
+}
   
   /* Links navegação */
   
   .links{
-    display: flex;
-    justify-content: center;
-    
-    gap: 1rem;
-    font-size: 1rem;
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+      /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+      justify-content: center;
+
+      /* Define o espaço entre os itens dentro do contêiner. Neste caso, o valor de 2rem especifica um espaçamento de 2 vezes o tamanho da unidade de medida rem. */
+      gap: 2rem;
+
+      /* Define o tamanho da fonte dentro do contêiner. Neste caso, 1rem corresponde ao tamanho de fonte padrão do elemento html (geralmente 16 pixels no navegador), proporcionando uma fonte de tamanho normal para o conteúdo dentro do contêiner. */
+      font-size: 1rem;
+
   }
   
   .links a{
-    color: #04fc04;
-    text-decoration: none;
+      /* Define a cor do texto como verde (#04fc04). */
+      color: #04fc04;
+
+      /* Remove a decoração de texto padrão, como sublinhado, do elemento HTML. */
+      text-decoration: none;
+
   }
   
   .link{
-    padding: 1rem 0.5rem;
-    background: #0a0a0a;
+/* Define o preenchimento do elemento. A propriedade padding aceita até quatro valores, representando o preenchimento nos lados superior, direito, inferior e esquerdo, respectivamente. 
+   Neste caso:
+   - 1rem: Define um preenchimento de 1 unidade de medida rem no topo e na parte inferior do elemento.
+   - 0.5rem: Define um preenchimento de 0.5 unidades de medida rem nos lados direito e esquerdo do elemento. */
+   padding: 1rem 0.5rem;
+
+   /* Define o fundo do elemento como uma tonalidade de cinza escuro (#0a0a0a). */
+   background: #0a0a0a;
+   
   }
   
   
   /*inicio*/
   
   section#inicio {
-    padding-bottom: 15rem; /* era 200 px alterei para 12.5 rem, verificar a questão da flexibilidade */
-      padding-top: 10rem; /* era 100 px alterei para 6.25 rem, verificar a questão da flexibilidade */
-      background: #000000; 
-      margin: 0;
-  
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
       display: flex;
-      align-items: center;
+
+      /* Define o fundo do elemento como preto (#000000). */
+      background: #000000;
+
+      /* Define a margem do elemento body como zero. Isso garante que não haja espaçamento extra ao redor do conteúdo da página. */
+      margin: 0;
+
+      /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
       justify-content: center;
+
+      /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+      align-items: center;
+
+      /* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. 
+        Neste caso, wrap permite que os itens sejam dispostos em várias linhas quando não couberem em uma única linha. */
+      flex-wrap: wrap;
+
+      /* Aplica o espaçamento igual entre os itens dentro do contêiner, distribuindo o espaço disponível de forma uniforme ao redor dos itens. 
+        Isso significa que há espaço igual entre os itens, bem como no início e no final do contêiner. */
+      justify-content: space-around;
+
   }
 
-  div#start h1, h3, p{
-    margin: 0;
-  }
+  
+  #start {
+      /* Define a margem superior de um elemento como 200 pixels. Isso significa que haverá um espaço de 200 pixels entre a borda superior do elemento e o elemento acima dele (ou em relação ao contêiner pai, se aplicável). */
+      margin-top: 200px;
+
+      /* A declaração width: 500px; em CSS define a largura de um elemento como 500 pixels. Isso significa que o elemento terá uma largura fixa de 500 pixels, independentemente do tamanho da tela ou do conteúdo dentro dele. */
+      width: 500px;
+
+      /* A propriedade text-align: center; é usada para alinhar o texto dentro de um elemento ao centro horizontalmente. Isso significa que o texto dentro do elemento será centralizado ao longo do eixo horizontal do elemento pai. */
+      text-align: center;
+
+    } 
+
   
     div#start h1{
   
-      font-size: 40px;
-      color: #00fd0d;
-      font-weight: normal;
-      
-    }
+/* Define o tamanho da fonte do texto dentro do elemento como 40 pixels. Isso aumentará o tamanho do texto para 40 pixels. */
+font-size: 40px;
+
+/* Define a cor do texto dentro do elemento como uma tonalidade de verde (especificada pelo código de cor hexadecimal #00fd0d). Isso fará com que o texto tenha uma cor verde brilhante. */
+color: #00fd0d;
+
+/* Define o peso da fonte do texto como normal. Isso restaura o peso da fonte para o padrão, desfazendo quaisquer outras configurações de peso da fonte que possam ter sido aplicadas anteriormente. */
+font-weight: normal;
+}
   
-    div#start H3{
-      font-size: 14px;
-      color: #00fd0d;
-  
-    }
-  
-    div#start p{
-      color: #afadad;
-      padding-bottom: 50px;
-    }
+  div#start H3{
+    font-size: 14px;/*Define o tamanho da fonte como 14 pixels. Isso especifica o tamanho do texto em relação à altura dos caracteres. Neste caso, o texto terá 14 pixels de altura.*/
+    color: #00fd0d; /*Define a cor do texto dentro do elemento como uma tonalidade de verde (especificada pelo código de cor hexadecimal #00fd0d). Isso fará com que o texto tenha uma cor verde brilhante.*/
     
   
-  div#start {
-        margin: 10rem; /* era 150 px alterei para 9 rem, verificar a questão da flexibilidade */
-        
-        
   }
+  
+  div#start p{
+    color: #afadad; /*Define a cor do texto como um tom de cinza específico, representado pelo código de cor hexadecimal #afadad. Isso fará com que o texto dentro do elemento tenha uma cor de cinza mais escura.*/
+    padding-bottom: 50px; /*Define o preenchimento na parte inferior do elemento como 50 pixels. Isso significa que haverá um espaço interno de 50 pixels entre o conteúdo dentro do elemento e a borda inferior do elemento.*/
+  }
+    
+  
 
   div#start img{
-    width: 24rem;
-    height: 24rem;
+    width: 24rem;/*Define a largura do elemento como 24 unidades de medida rem. Isso especifica a largura do elemento em relação à largura do caractere "M" da fonte padrão definida no documento. No caso de 24rem, o elemento terá uma largura de 24 vezes a largura do caractere "M".*/
+    height: 24rem;/*Define a altura do elemento como 24 unidades de medida rem. Isso especifica a altura do elemento em relação à altura do caractere "M" da fonte padrão definida no documento. No caso de 24rem, o elemento terá uma altura de 24 vezes a altura do caractere "M".*/
+    border-radius: 100%;/*Define um raio de borda de 100% para o elemento, o que faz com que as bordas do elemento sejam arredondadas para criar um círculo. A porcentagem especificada se refere à largura do próprio elemento, fazendo com que as bordas sejam arredondadas para corresponder ao tamanho do elemento. Isso transforma o elemento em um círculo.*/
 
-    border-radius: 100%;
   }
   
   /*Inicio Button */
   
   button {
-    text-transform: uppercase;
-    font-family: 'Mulish', sans-serif;
-    color: #fff;
-  
-    height: 56px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    display: flex;
-    flex-shrink: 0;
-    
-    padding: 14px 32px 15px 32px;
-    border: none;
-    background: #04fc04;
-    border-radius: 30px;
-    text-decoration: none;
-  
-    cursor: pointer;
+/* Define que o texto dentro do elemento será convertido para maiúsculas. */
+text-transform: uppercase;
+
+/* Define a família de fontes usada para o texto dentro do elemento. */
+font-family: 'Mulish', sans-serif;
+
+/* Define a cor do texto dentro do elemento. */
+color: #fff;
+
+/* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+justify-content: center;
+
+/* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+align-items: center;
+
+/* Define se o elemento pode ou não diminuir de tamanho em relação ao seu contêiner. */
+flex-shrink: 0;
+
+/* Define o preenchimento interno do elemento. */
+padding: 14px 32px 15px 32px;
+
+/* Remove a borda do elemento. */
+border: none;
+
+/* Define a cor de fundo do elemento. */
+background: #04fc04;
+
+/* Define o raio de borda do elemento, arredondando suas bordas. */
+border-radius: 30px;
+
+/* Remove qualquer decoração de texto, como sublinhado, do elemento. */
+text-decoration: none;
+
+/* Define o cursor do mouse quando está sobre o elemento. */
+cursor: pointer;
+
     
   }
   
   /* sobre mim */
   
   section#sobre{
+    /* Define a cor de fundo da seção como preto. */
     background-color: #1d1c1d;
-  
-    padding-left: 20rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-right: 10rem;
 
+    /* Define a margem da seção como zero, removendo qualquer margem padrão do navegador. */
+    margin: 0;
 
-      max-width: 96rem;
-      margin: 0;
-      
+    /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+    display: flex;
+
+    /* Define a altura da seção como 400 pixels. */
+    height: 400px;
+
+    /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+    justify-content: center;
+
+    /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+    align-items: center;
+
+    /* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. */
+    flex-wrap: wrap;
+
   }
-  
+  section#sobre h2, p {
+      /* Define a margem do título e do parágrafo como 50 pixels na parte superior e nas laterais e 0 na parte inferior. */
+      margin: 50px;
+      /*Esta regra CSS define a margem esquerda do elemento como 50 pixels. Isso sobrescreve a configuração de margem esquerda definida na regra anterior.*/
+      margin-left: 50px;
+      /* Define o alinhamento do texto do título e do parágrafo como central. */
+      text-align: center;
+
+  }
   section#sobre h2 {
-    color: #04fc04;
+      /* Define a cor do título como verde. */
+      color: #04fc04;
+
+      /* Define o tamanho da fonte do título como 4 rem. */
       font-size: 4rem;
+
+      /* Define o peso da fonte do título como 700 (negrito). */
       font-weight: 700;
+
+
   }
   
   section#sobre p {
+    /* Define a largura do parágrafo como 500 pixels. */
+    width: 500px;
+
+    /* Define a cor do texto do parágrafo como branco. */
     color: #fff;
+
+    /* Define o tamanho da fonte do parágrafo como 1.1 rem. */
     font-size: 1.1rem;
+
+    /* Define a altura da linha do parágrafo como 1.5 vezes o tamanho da fonte. */
+    line-height: 1.5;
+
   }
   
   
+  /*Projetos*/
+  
+  section#Titulo-projetos{
+      /* Define a cor de fundo do elemento como preto. */
+      background: #000000;
+
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+      /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+      align-items: center;
+
+      /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+      justify-content: center;
+
+      /* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. */
+      flex-wrap: wrap;
+
+  }
+  
+  section#Titulo-projetos h1{
+      /* Define a margem superior do elemento como 100 pixels, criando um espaço entre o elemento e o elemento acima dele. */
+      margin-top: 100px;
+
+      /* Define o tamanho da fonte do texto dentro do elemento como 50 pixels. */
+      font-size: 50px;
+
+      /* Define a cor do texto dentro do elemento como uma tonalidade de verde, especificada pelo código de cor hexadecimal #00fd0d. Isso resulta em um texto com uma cor verde brilhante. */
+      color: #00fd0d;
+
+   }
+
+  section#Titulo-projetos p{
+      /* Define o tamanho da fonte do texto dentro do elemento como 30 pixels. */
+      font-size: 30px;
+
+      /* Define a cor do texto dentro do elemento como branco, especificada pelo código de cor hexadecimal #ffffff. */
+      color: #ffffff;
+
+      /* Define o preenchimento na parte inferior do elemento como 100 pixels, criando um espaço entre o conteúdo do elemento e a borda inferior. */
+      padding-bottom: 100px;
+
+  }
+  
+  section#projetos {
+    
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+      /* Alinha os itens horizontalmente dentro do contêiner, distribuindo o espaço disponível de forma uniforme ao redor dos itens. Isso resulta em espaçamento igual entre os itens e nos espaços entre o contêiner e os itens extremos. */
+      justify-content: space-around;
+
+      /* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. */
+      flex-wrap: wrap;
+
+      /* Define a cor de fundo do contêiner como preto. */
+      background: #000000;
+
+  }
+  
+  
+  .card {
+      /* Define a margem superior do elemento como 100 pixels, criando um espaço entre o elemento e o elemento acima dele. */
+      margin-top: 100px;
+
+      /* Define a cor de fundo do elemento como um tom de cinza, especificado pelo valor RGB (51, 51, 51). */
+      background: rgb(51, 51, 51);
+
+      /* Define uma borda para o elemento com 2 pixels de largura, sólida e na cor #323238. */
+      border: 2px solid #323238;
+
+      /* Define a largura do elemento como 350 pixels. */
+      width: 350px;
+
+      /* Define o raio da borda do elemento como 8 pixels, arredondando suas bordas. */
+      border-radius: 8px;
+
+      /* Define o comportamento do conteúdo que ultrapassa os limites do elemento. Neste caso, o conteúdo será ocultado, sem barras de rolagem. */
+      overflow: hidden;
+
+  }
+  
+  .card p {
+      /* Define a cor do texto dentro do elemento como um tom de cinza claro, especificado pelo código de cor hexadecimal #C4C4CC. */
+      color: #C4C4CC;
+
+      /* Define o tamanho da fonte do texto dentro do elemento como 12 pixels. */
+      font-size: 12px;
+
+      /* Define o peso da fonte do texto dentro do elemento como 600, que representa uma fonte mais grossa do que a normal. */
+      font-weight: 600;
+
+      /* Define o preenchimento interno do elemento. A primeira parte (14px) é para o preenchimento superior, a segunda parte (22px) é para o preenchimento esquerdo e direito, e a terceira parte (22px) é para o preenchimento inferior. */
+      padding: 14px 22px 22px;
+
+  }
+  
+  .card h2 {
+      /* Define a cor do texto dentro do elemento como um tom de cinza claro, especificado pelo código de cor hexadecimal #E1E1E6. */
+      color: #E1E1E6;
+
+      /* Define o peso da fonte do texto dentro do elemento como 900, que representa uma fonte mais grossa do que a normal. */
+      font-weight: 900;
+
+      /* Define o tamanho da fonte do texto dentro do elemento como 20 pixels. */
+      font-size: 20px;
+
+      /* Define o preenchimento interno do elemento. A primeira parte (14px) é para o preenchimento superior, a segunda parte (32px) é para o preenchimento esquerdo e direito, e a terceira parte (0) é para o preenchimento inferior. */
+      padding: 14px 32px 0;
+
+  }
+  
+  .card img {
+      /* Define a largura do elemento como 100% da largura do seu contêiner pai. */
+      width: 100%;
+
+      /* Define a altura do elemento como 200 pixels. */
+      height: 200px;
+
+  }
+
+  section#vermais{
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+      /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+      align-items: center;
+
+      /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+      justify-content: center;
+
+      /* Define a cor de fundo do elemento como preto. */
+      background-color: #000;
+
+      /* Define o preenchimento interno do elemento. A primeira parte (10px) é para o preenchimento superior, a segunda parte (10px) é para o preenchimento direito, a terceira parte (100px) é para o preenchimento inferior, e a quarta parte (10px) é para o preenchimento esquerdo. */
+      padding: 10px 10px 100px 10px;
+
+  }
+  section#vermais button{
+      margin-top: 100px; /* Define a margem superior do elemento como 100 pixels, criando um espaço entre o elemento e o elemento acima dele. */
+  }
+
   /* Habilidades */
   
   section#habilidades {
-    background: #1f1f1f;
-    padding-left: 9rem; 
-    padding-right: 50px;
+      /* Define a cor de fundo do elemento como um tom de cinza escuro, especificado pelo código de cor hexadecimal #1f1f1f. */
+      background: #1f1f1f;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      /* Define a margem do elemento como 0, removendo qualquer margem ao redor do elemento. */
+      margin: 0;
+
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+      /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+      align-items: center;
+
+      /* Alinha os itens dentro do contêiner, distribuindo o espaço disponível de forma uniforme ao redor dos itens. */
+      justify-content: space-around;
+
+      /* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. */
+      flex-wrap: wrap;
+
+      /* Define a altura do elemento como 500 pixels. */
+      height: 500px;
+
+
 
   }
   
   section#habilidades img{
-    width: auto;
-    height: 80px;
+
+      /* Define a margem do elemento como 50 pixels em todas as direções, criando um espaço entre o elemento e outros elementos ao redor dele. */
+      margin: 50px;
+
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+      /* Define a largura do elemento como automática, permitindo que o elemento tenha a largura do seu conteúdo. */
+      width: auto;
+
+      /* Define a altura do elemento como 80 pixels. */
+      height: 80px;
+
+    
   }
   
   section#habilidades div#conteudo-habilidades {
-    
-    margin: 0 auto;
-    padding: 154px 0;
-  
-    display: flex;
-    align-items: center;
+      /* Define a margem do elemento como 0, removendo qualquer margem ao redor do elemento. */
+      margin: 0;
+
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+      /* Alinha os itens dentro do contêiner, distribuindo o espaço disponível de forma uniforme ao redor dos itens. Isso significa que há espaço igual entre os itens, bem como no início e no final do contêiner. */
+      justify-content: space-around;
+
+      /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+      align-items: center;
+
+      /* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. */
+      flex-wrap: wrap;
+
+
     
   }
   
   div#conteudo-habilidades h2{
-    color: #04fc04;
-    font-weight: 700;
-    font-size: 48px;
+      /* Define a cor do texto dentro do elemento como um tom de verde, especificado pelo código de cor hexadecimal #04fc04. */
+      color: #04fc04;
+
+      /* Define o peso da fonte do texto dentro do elemento como 700, que representa uma fonte mais grossa do que a normal. */
+      font-weight: 700;
+
+      /* Define o tamanho da fonte do texto dentro do elemento como 48 pixels. */
+      font-size: 48px;
+
+      /* Define a margem inferior do elemento como 100 pixels, criando um espaço entre o elemento e o elemento abaixo dele. */
+      margin-bottom: 100px;
+
+    
   }
   
   div#conteudo-habilidades h2 span{
-    font-size: 24px;
-    display: block;
+      /* Define o tamanho da fonte do texto como 24 pixels. */
+      font-size: 24px;
+
+      /* Define o elemento como um bloco, fazendo com que ele ocupe toda a largura disponível horizontalmente e inicie em uma nova linha. */
+      display: block;
+
   }
   
   div#conteudo-habilidades ul#tecnologias{
-    width: 100%;
-    margin-left: 49px;
-  
-    display: flex;
+      display: flex;/*Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele.*/
   }
   
   ul#tecnologias li.tecnologia{
     
   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-    width: 159px;
-    height: 159px;
-    border-radius: 8px;
-  
-    box-shadow: 0px 36px 28px -24px rgba(0, 0, 0, 0.2);
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+      /* Define a direção principal dos itens dentro do contêiner como uma coluna, fazendo com que os itens sejam dispostos verticalmente. */
+      flex-direction: column;
+
+      /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+      align-items: center;
+
+      /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+      justify-content: center;
+
+      /* Define a largura do elemento como 159 pixels. */
+      width: 159px;
+
+      /* Define a altura do elemento como 159 pixels. */
+      height: 159px;
+
+      /* Define o raio da borda do elemento como 8 pixels, arredondando suas bordas. */
+      border-radius: 8px;
+
+      /* Adiciona uma sombra ao redor do elemento. Os valores especificados são: deslocamento horizontal (0px), deslocamento vertical (36px), desfoque (28px), espalhamento (-24px) e cor da sombra (rgba(0, 0, 0, 0.2)). */
+      box-shadow: 0px 36px 28px -24px rgba(0, 0, 0, 0.2);
+
   }
   
   li.tecnologia:not(:last-child){
-    margin-right: 24px;
+      /* Define a margem direita do elemento como 24 pixels, criando um espaço entre o elemento e o elemento à sua direita. */
+      margin-right: 24px;
+
   }
   
   li.tecnologia p{
     
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 8px;
-    color: #fff;
+      /* Define o tamanho da fonte do texto como 16 pixels. */
+      font-size: 16px;
+
+      /* Define o peso da fonte do texto como 700, que representa uma fonte mais grossa do que a normal. */
+      font-weight: 700;
+
+      /* Transforma todo o texto do elemento em letras maiúsculas. */
+      text-transform: uppercase;
+
+      /* Define a margem superior do elemento como 8 pixels, criando um espaço entre o elemento e o elemento acima dele. */
+      margin-top: 8px;
+
+      /* Define a cor do texto dentro do elemento como branca (#fff). */
+      color: #fff;
+
   }
   
   /* Contato */
   
   section#contatos {
       
-    padding-bottom: 5rem; /* era 200 px alterei para 12.5 rem, verificar a questão da flexibilidade */
-    padding-top: 6.25rem; /* era 100 px alterei para 6.25 rem, verificar a questão da flexibilidade */
-    background: #000000;
-    padding-left: 50px;
-    padding-right: 50px;
-    
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-  
+      /* Define o preenchimento inferior do elemento como 5 vezes a altura da fonte atual (5rem), fornecendo flexibilidade em relação à altura do elemento. */
+      padding-bottom: 5rem;
+
+      /* Define o preenchimento superior do elemento como 6.25 vezes a altura da fonte atual (6.25rem), fornecendo flexibilidade em relação à altura do elemento. */
+      padding-top: 6.25rem;
+
+      /* Define a cor de fundo do elemento como preta (#000000). */
+      background: #000000;
+
+      /* Define o preenchimento esquerdo do elemento como 50 pixels. */
+      padding-left: 50px;
+
+      /* Define o preenchimento direito do elemento como 50 pixels. */
+      padding-right: 50px;
+
+      /* Define se os itens dentro do contêiner podem ser dispostos em várias linhas, se necessário. */
+      flex-wrap: wrap;
+
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+      /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+      align-items: center;
+
+      /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+      justify-content: center;
+
   }
   
   section#contatos h1{
-    font-size: 2.5rem; /* era 40 px alterei para 2.5 rem, verificar a questão da flexibilidade */
-    line-height: 3.5rem; /* era 56 px alterei para 3.5 rem, verificar a questão da flexibilidade */
-    color: #04fc04;
-  
-    font-weight: normal;
+      /* Define o tamanho da fonte do texto como 2.5 vezes a altura da fonte atual (2.5rem), fornecendo flexibilidade em relação ao tamanho da fonte. */
+      font-size: 2.5rem;
+
+      /* Define a altura da linha do texto como 3.5 vezes a altura da fonte atual (3.5rem), fornecendo flexibilidade em relação ao espaçamento entre as linhas de texto. */
+      line-height: 3.5rem;
+
+      /* Define a cor do texto como verde brilhante (#04fc04). */
+      color: #04fc04;
+
+      /* Define o peso da fonte do texto como normal. Isso restaura o peso da fonte para o padrão, desfazendo quaisquer outras configurações de peso da fonte que possam ter sido aplicadas anteriormente. */
+      font-weight: normal;
+
     
   }
   
   section#contatos h4{
-    color: #fff;
+      /* Define a cor do texto como branco (#fff). */
+      color: #fff;
+
   }
   
   div#con {
+      /* Define uma margem de 10 vezes a altura da fonte atual (10rem) ao redor do elemento, criando um espaçamento externo entre o elemento e seus elementos vizinhos. */
       margin: 10rem;
+
   }
   
   img#con {
-    width: auto; /* era 300px alterei para 19rem, verificar a questão da flexibilidade */
-    height: 15rem;
+      /* Define a largura do elemento como automática, o que significa que o tamanho será determinado pelo conteúdo dentro dele. */
+      width: auto;
+
+      /* Define a altura do elemento como 15 vezes a altura da fonte atual (15rem), fornecendo flexibilidade em relação à altura do elemento. */
+      height: 15rem;
   }
   
  
@@ -248,110 +602,196 @@ body {
   /* footer - Final */
   
   footer{
-    align-items: center;
-    justify-content: center;
-    display: flex;
+      /* Define os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+      align-items: center;
 
-    padding: 15rem;
-      
+      /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+      justify-content: center;
+
+      /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+      display: flex;
+
+
+      /* Define a margem superior e inferior como automática e as laterais como 0, centralizando horizontalmente o elemento no contêiner pai. */
       margin: 0 auto;
-  
+
+      /* Define a direção principal dos itens dentro do contêiner como uma coluna, fazendo com que os itens sejam dispostos verticalmente. */
       flex-direction: column;
-  
+
+      /* Define a cor de fundo do elemento como preta (#000000). */
       background: #000;
   }
   
   footer p{
-    padding-top: 40px;
-    color: #fff;
+      /* Define o preenchimento superior do elemento como 40 pixels, criando espaço entre o conteúdo e a borda superior do elemento. */
+      padding-top: 40px;
+
+      /* Define a cor do texto dentro do elemento como branco (#fff). */
+      color: #fff;
+
   }
   
   footer img{
-    width: 30px; 
-        height: 30px;
-  
-  }
-  
-  @media(max-width: 1200px){
-    .itens-center{
-        flex-direction: column;
-    }
-    footer,
-    section{
-        padding: 5rem;
-    }
-  
-  }
-  
-  /*Projetos*/
-  
-  section#Titulo-projetos{
-    background: #000000;
-    padding: 10px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  section#Titulo-projetos h1{
-    font-size: 50px;
-    color: #00fd0d;
-  }
+      /* Define a largura do elemento como 30 pixels. */
+      width: 30px;
 
-  section#Titulo-projetos p{
-    font-size: 30px;
-    color: #ffffff;
-    padding-bottom: 100px;
+      /* Define a altura do elemento como 30 pixels. */
+      height: 30px;
+
+  
   }
   
-  section#projetos {
+
+  
+  
+  @media only screen and (max-width: 713px){
+    #start {
+        /* Define a margem superior do elemento como 50 pixels, criando espaço entre o elemento e os elementos acima dele. */
+        margin-top: 50px;
+
+        /* Define a largura do elemento como 500 pixels. */
+        width: 500px;
+
+      } 
+    div#start h1, h3 {
+        /* Define o tamanho da fonte do texto dentro do elemento como 30 pixels. */
+        font-size: 30px;
+
+      }
+
+
+    section#sobre h2 {
+        /* Define a cor do texto como verde claro (#04fc04). */
+        color: #04fc04;
+
+        /* Define o tamanho da fonte do texto como 3 vezes a altura da fonte atual (3rem). */
+        font-size: 3rem;
+
+        /* Define o peso da fonte do texto como negrito (700). */
+        font-weight: 700;
+      }
       
-    padding-bottom: 50px;
-    padding-top: 10px;
-  
-      display: grid;
-      grid-template-columns: repeat(3, 370px);
-      place-content: center;
-      gap: 48px 60px;
-  
-      background: #000000;
-  }
-  
-  
-  .card {
-    background: rgb(51, 51, 51);;
-    border: 2px solid #323238;
-    
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .card p {
-    color: #C4C4CC;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 14px 22px 22px;
-  }
-  
-  .card h2 {
-    color: #E1E1E6;
-    font-weight: 900;
-    font-size: 20px;
-    padding: 14px 32px 0;
-  }
-  
-  .card img {
-    width: 366px;
-    height: 200px;
-  }
+      section#sobre p {
+        /* Define a largura do elemento como 300 pixels. */
+        width: 300px;
 
-  section#vermais{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        /* Define a cor do texto como branco (#fff). */
+        color: #fff;
 
-    background-color: #000;
-    padding: 10px 10px 100px 10px;
-  }
+        /* Define o tamanho da fonte do texto como 1 vez a altura da fonte atual (1rem). */
+        font-size: 1rem;
+
+        /* Define a altura da linha do texto como 1.5 vezes a altura da fonte atual (1.5). */
+        line-height: 1.5;
+
+      }
+      .card {
+          /* Define a margem de todos os lados do elemento como 0, removendo qualquer espaçamento externo. */
+          margin: 0;
+
+          /* Define a margem superior do elemento como 100 pixels, criando espaço entre o elemento e os elementos acima dele. */
+          margin-top: 100px;
+
+          /* Define a cor de fundo do elemento como um tom de cinza escuro (rgb(51, 51, 51)). */
+          background: rgb(51, 51, 51);
+
+          /* Define a largura do elemento como 350 pixels. */
+          width: 350px;
+
+          /* Define a altura do elemento como 450 pixels. */
+          height: 450px;
+
+          /* Define uma borda sólida de 2 pixels com a cor cinza escuro (#323238) ao redor do elemento. */
+          border: 2px solid #323238;
+
+          /* Define o raio da borda do elemento como 8 pixels, arredondando suas bordas. */
+          border-radius: 8px;
+
+          /* Define o comportamento de overflow do conteúdo do elemento como oculto, para que qualquer conteúdo que ultrapasse os limites do elemento seja cortado. */
+          overflow: hidden;
+
+      }
+      ul#tecnologias li.tecnologia{  
+          /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+          display: flex;
+
+          /* Define a direção principal dos itens dentro do contêiner como uma coluna, fazendo com que os itens sejam dispostos verticalmente. */
+          flex-direction: column;
+
+          /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+          align-items: center;
+
+          /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+          justify-content: center;
+
+          /* Define a margem de todos os lados do elemento como 0, removendo qualquer espaçamento externo. */
+          margin: 0;
+
+          /* Define a largura do elemento como 120 pixels. */
+          width: 120px;
+
+          /* Define a altura do elemento como 120 pixels. */
+          height: 120px;
+
+          /* Define o raio da borda do elemento como 8 pixels, arredondando suas bordas. */
+          border-radius: 8px;
+
+          /* Adiciona uma sombra ao redor do elemento. Os valores especificados são: deslocamento horizontal, deslocamento vertical, desfoque, espalhamento e cor da sombra. */
+          box-shadow: 0px 36px 28px -24px rgba(0, 0, 0, 0.2);
+
+      }
+
+      section#contatos {
+          /* Define o espaçamento na parte inferior do elemento como 5 vezes o tamanho da unidade rem (5rem), proporcionando flexibilidade ao ajustar o tamanho em relação à altura da tela. */
+          padding-bottom: 5rem;
+
+          /* Define o espaçamento na parte superior do elemento como 6.25 vezes o tamanho da unidade rem (6.25rem), proporcionando flexibilidade ao ajustar o tamanho em relação à altura da tela. */
+          padding-top: 6.25rem;
+
+          /* Define a cor de fundo do elemento como preto (#000000). */
+          background: #000000;
+
+          /* Define o espaçamento à esquerda e à direita do elemento como 50 pixels, proporcionando espaçamento interno ao redor do conteúdo. */
+          padding-left: 50px;
+          padding-right: 50px;
+
+          /* Define o comportamento de quebra de linha dos itens dentro do contêiner como wrap, permitindo que eles sejam dispostos em várias linhas se necessário. */
+          flex-wrap: wrap;
+
+          /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
+          display: flex;
+
+          /* Alinha os itens verticalmente dentro do contêiner, centralizando-os ao longo do eixo transversal (vertical) do flexbox. */
+          align-items: center;
+
+          /* Alinha os itens horizontalmente dentro do contêiner, centralizando-os ao longo do eixo principal (horizontal) do flexbox. */
+          justify-content: center;
+      }
+      
+      section#contatos h1{
+          /* Define o tamanho da fonte como 2.5 vezes o tamanho da unidade rem (2.5rem), proporcionando flexibilidade ao ajustar o tamanho em relação ao restante do layout. */
+          font-size: 2.5rem;
+
+          /* Define a altura da linha como 3.5 vezes o tamanho da unidade rem (3.5rem), proporcionando espaço vertical adequado entre as linhas de texto. */
+          line-height: 3.5rem;
+
+          /* Define a cor do texto como um tom de verde especificado pelo código de cor hexadecimal #04fc04. */
+          color: #04fc04;
+
+          /* Define o peso da fonte do texto como normal, restaurando o peso da fonte para o padrão. */
+          font-weight: normal;
+      }
+      
+      section#contatos h4{
+          /* Define a cor do texto como branco (#fff), proporcionando contraste em relação ao plano de fundo ou ao ambiente circundante. */
+          color: #fff;
+
+          /* Define uma margem de 20 pixels ao redor do elemento, garantindo um espaçamento uniforme entre este elemento e outros elementos ao seu redor. */
+          margin: 20px;
+
+      }
+      
+      
+      
+}
+  
