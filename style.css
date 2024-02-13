@@ -611,8 +611,6 @@ cursor: pointer;
       /* Define o contêiner como um contêiner flexível, permitindo que seus itens (filhos diretos) sejam dispostos e alinhados de maneira flexível dentro dele. */
       display: flex;
 
-      /* Define o preenchimento de 15 vezes a altura da fonte atual (15rem) em todas as direções do elemento. */
-      padding: 15rem;
 
       /* Define a margem superior e inferior como automática e as laterais como 0, centralizando horizontalmente o elemento no contêiner pai. */
       margin: 0 auto;
